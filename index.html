@@ -1,0 +1,169 @@
+
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TrigoMat 2.0 - Descarga Oficial</title>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'VT323', monospace;
+            background-image: url('Fondo Configuración.jpg.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            color: #fff8e7;
+        }
+
+        .overlay {
+            background-color: rgba(34, 20, 14, 0.85);
+            border: 4px solid #d97736;
+            box-shadow: 0 0 0 4px #4a2511, 0 15px 30px rgba(0, 0, 0, 0.8);
+            max-width: 750px;
+            width: 100%;
+            padding: 35px;
+            border-radius: 8px;
+            text-align: center;
+        }
+
+        h1 {
+            font-family: 'Press Start 2P', cursive;
+            color: #ffbe3b;
+            font-size: 2rem;
+            text-shadow: 3px 3px 0px #8c2d19;
+            margin-bottom: 15px;
+            line-height: 1.4;
+        }
+
+        .subtitle {
+            font-size: 1.6rem;
+            color: #f4d3a1;
+            margin-bottom: 25px;
+        }
+
+        .info-box {
+            background-color: rgba(74, 37, 17, 0.7);
+            border: 2px solid #a85226;
+            padding: 20px;
+            margin-bottom: 30px;
+            text-align: left;
+            font-size: 1.35rem;
+            line-height: 1.5;
+        }
+
+        .info-box h2 {
+            font-family: 'Press Start 2P', cursive;
+            font-size: 1rem;
+            color: #ffbe3b;
+            margin-bottom: 12px;
+        }
+
+        .info-box ul {
+            list-style-type: none;
+            padding-left: 10px;
+        }
+
+        .info-box li {
+            margin-bottom: 8px;
+        }
+
+        .info-box li::before {
+            content: "🌾 ";
+        }
+
+        .btn-download {
+            display: inline-block;
+            font-family: 'Press Start 2P', cursive;
+            font-size: 1.1rem;
+            color: #fff;
+            background-color: #c83e2b;
+            padding: 20px 30px;
+            text-decoration: none;
+            border: 4px solid #ffbe3b;
+            box-shadow: 0 6px 0 #701c11;
+            transition: transform 0.1s, box-shadow 0.1s, background-color 0.2s;
+            cursor: pointer;
+            margin-bottom: 25px;
+        }
+
+        .btn-download:hover {
+            background-color: #e04833;
+            transform: translateY(-2px);
+            box-shadow: 0 8px 0 #701c11;
+        }
+
+        .btn-download:active {
+            transform: translateY(4px);
+            box-shadow: 0 2px 0 #701c11;
+        }
+
+        .requirements {
+            font-size: 1.2rem;
+            color: #d4b48c;
+            border-top: 2px dashed #a85226;
+            padding-top: 15px;
+            margin-top: 10px;
+        }
+
+        .footer {
+            margin-top: 20px;
+            font-size: 1.1rem;
+            color: #b8956e;
+        }
+
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 1.4rem;
+            }
+            .btn-download {
+                font-size: 0.9rem;
+                padding: 15px 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="overlay">
+        <h1>TRIGOMAT 2.0</h1>
+        <p class="subtitle">Aventura Matemática en la Granja con Roberto</p>
+
+        <div class="info-box">
+            <h2>ACERCA DEL PROYECTO</h2>
+            <ul>
+                <li>Supera 10 niveles y mundos llenos de retos matemáticos.</li>
+                <li>Acompaña a Roberto en una experiencia con gráficos estilo pixel art.</li>
+                <li>Guarda tu progreso y puntuaciones automáticamente.</li>
+                <li>Desarrollado en C# (.NET Framework) con base de datos MySQL.</li>
+            </ul>
+        </div>
+
+        <!-- REEMPLAZA EL ENLACE DE ABAJO CON TU LINK DE MEDIAFIRE -->
+        <a href="TU_ENLACE_DE_MEDIAFIRE_AQUI" target="_blank" class="btn-download">
+            DESCARGAR JUEGO (MEDIAFIRE)
+        </a>
+
+        <div class="requirements">
+            <p><strong>Requisitos:</strong> Windows 10 / 11 • .NET Framework • XAMPP / MySQL</p>
+        </div>
+
+        <div class="footer">
+            <p>Desarrollado por Leonel Isai Cruz Hernández y equipo • 2026</p>
+        </div>
+    </div>
+
+</body>
+</html>
