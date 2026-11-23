@@ -1,5 +1,3 @@
-
-
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -84,19 +82,27 @@
             content: "🌾 ";
         }
 
+        .download-group {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 18px;
+            margin-bottom: 25px;
+        }
+
         .btn-download {
             display: inline-block;
             font-family: 'Press Start 2P', cursive;
-            font-size: 1.1rem;
+            font-size: 1.05rem;
             color: #fff;
             background-color: #c83e2b;
-            padding: 20px 30px;
+            padding: 18px 28px;
             text-decoration: none;
             border: 4px solid #ffbe3b;
             box-shadow: 0 6px 0 #701c11;
             transition: transform 0.1s, box-shadow 0.1s, background-color 0.2s;
             cursor: pointer;
-            margin-bottom: 25px;
+            max-width: 100%;
         }
 
         .btn-download:hover {
@@ -108,6 +114,23 @@
         .btn-download:active {
             transform: translateY(4px);
             box-shadow: 0 2px 0 #701c11;
+        }
+
+        .btn-db {
+            background-color: #2e7d32;
+            border-color: #a5d6a7;
+            box-shadow: 0 6px 0 #1b4d1e;
+            font-size: 0.95rem;
+            padding: 15px 24px;
+        }
+
+        .btn-db:hover {
+            background-color: #388e3c;
+            box-shadow: 0 8px 0 #1b4d1e;
+        }
+
+        .btn-db:active {
+            box-shadow: 0 2px 0 #1b4d1e;
         }
 
         .requirements {
@@ -129,8 +152,12 @@
                 font-size: 1.4rem;
             }
             .btn-download {
-                font-size: 0.9rem;
-                padding: 15px 20px;
+                font-size: 0.85rem;
+                padding: 15px 18px;
+            }
+            .btn-db {
+                font-size: 0.78rem;
+                padding: 14px 16px;
             }
         }
     </style>
@@ -151,10 +178,15 @@
             </ul>
         </div>
 
-        <!-- REEMPLAZA EL ENLACE DE ABAJO CON TU LINK DE MEDIAFIRE -->
-        <a href="TU_ENLACE_DE_MEDIAFIRE_AQUI" target="_blank" class="btn-download">
-            DESCARGAR JUEGO (MEDIAFIRE)
-        </a>
+        <div class="download-group">
+            <a href="https://www.mediafire.com/file/cbtzivszoe3x22y/TrigoMat_2026.exe/file" target="_blank" rel="noopener noreferrer" class="btn-download">
+                DESCARGAR JUEGO (MEDIAFIRE)
+            </a>
+
+            <a href="https://www.mediafire.com/file/xs6uj0d30blq6u2/recopilacion_trigomath.sql/file" target="_blank" rel="noopener noreferrer" class="btn-download btn-db">
+                DESCARGAR BASE DE DATOS (MEDIAFIRE)
+            </a>
+        </div>
 
         <div class="requirements">
             <p><strong>Requisitos:</strong> Windows 10 / 11 • .NET Framework • XAMPP / MySQL</p>
